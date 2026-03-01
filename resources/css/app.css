@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* ===== Professional Language Selector Styles ===== */
+/* ===== Reference Style Language Switcher ===== */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 10px;
+}
+
+
+
+
+.language-switcher .nav-link-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.language-switcher .nav-link-2:hover {
+    background-color: #3581b8;
+    color: #fff;
+}
+
+.language-switcher .nav-link-2.w-nav-link {
+    padding: 5px 10px !important;
+    display: inline-flex !important;
+}
+
+.language-switcher .nav-link-2.w-nav-link.active {
+    color: white !important;
+    background: green !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .language-switcher {
+        margin-left: 0;
+        margin-top: 10px;
+        padding-left: 20px;
+        /* Match mobile nav padding */
+    }
+}
+
+/* Navbar container positioning for language selector */
+.w-nav {
+    position: relative;
+}
+
+.w-container {
+    position: relative;
+}
