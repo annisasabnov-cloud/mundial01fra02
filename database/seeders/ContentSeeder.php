@@ -15,11 +15,10 @@ class ContentSeeder extends Seeder
     {
         // ============================================
         // GENERIC SECTION CONTENTS
-        // Sections yang dapat digunakan di berbagai halaman
         // ============================================
         
         $contents = [
-            // Hero Section - untuk halaman dengan hero banner
+            // Hero Section
             [
                 'section_key' => 'hero_section',
                 'content_type' => 'mixed',
@@ -36,11 +35,11 @@ class ContentSeeder extends Seeder
                         'button_text' => 'Get Started',
                         'button_link' => '/start',
                     ],
-                    'de' => [
-                        'title' => 'Willkommen bei Mundial',
-                        'subtitle' => 'Ihr internationaler Partner',
-                        'description' => 'Wir bieten umfassende Lösungen für Ihre geschäftlichen Anforderungen weltweit.',
-                        'button_text' => 'Loslegen',
+                    'id' => [
+                        'title' => 'Selamat Datang di Mundial',
+                        'subtitle' => 'Mitra Internasional Anda',
+                        'description' => 'Kami menyediakan solusi komprehensif untuk kebutuhan bisnis Anda di seluruh dunia.',
+                        'button_text' => 'Mulai Sekarang',
                         'button_link' => '/start',
                     ],
                     'fr' => [
@@ -70,11 +69,11 @@ class ContentSeeder extends Seeder
                         'button_text' => 'Learn More',
                         'button_link' => '/about',
                     ],
-                    'de' => [
-                        'title' => 'Unsere Funktionen',
-                        'subtitle' => 'Was uns unterscheidet',
-                        'description' => 'Erleben Sie hochmoderne Lösungen für moderne Unternehmen.',
-                        'button_text' => 'Mehr erfahren',
+                    'id' => [
+                        'title' => 'Fitur Kami',
+                        'subtitle' => 'Yang Membuat Kami Berbeda',
+                        'description' => 'Rasakan solusi mutakhir yang dirancang untuk bisnis modern.',
+                        'button_text' => 'Pelajari Lebih Lanjut',
                         'button_link' => '/about',
                     ],
                     'fr' => [
@@ -104,11 +103,11 @@ class ContentSeeder extends Seeder
                         'button_text' => 'View All',
                         'button_link' => '/services',
                     ],
-                    'de' => [
-                        'title' => 'Unsere Dienstleistungen',
-                        'subtitle' => 'Komplette Lösungen',
-                        'description' => 'Von der Beratung bis zur Umsetzung bieten wir umfassende Services.',
-                        'button_text' => 'Alle ansehen',
+                    'id' => [
+                        'title' => 'Layanan Kami',
+                        'subtitle' => 'Solusi Lengkap',
+                        'description' => 'Dari konsultasi hingga implementasi, kami menyediakan layanan menyeluruh.',
+                        'button_text' => 'Lihat Semua',
                         'button_link' => '/services',
                     ],
                     'fr' => [
@@ -138,11 +137,11 @@ class ContentSeeder extends Seeder
                         'button_text' => 'View Pricing',
                         'button_link' => '/preise',
                     ],
-                    'de' => [
-                        'title' => 'Einfache Preisgestaltung',
-                        'subtitle' => 'Wählen Sie Ihren Plan',
-                        'description' => 'Transparente Preisgestaltung ohne versteckte Gebühren. Skaliert mit Ihrem Wachstum.',
-                        'button_text' => 'Preise anzeigen',
+                    'id' => [
+                        'title' => 'Harga yang Sederhana',
+                        'subtitle' => 'Pilih Paket Anda',
+                        'description' => 'Harga transparan tanpa biaya tersembunyi. Berkembang seiring pertumbuhan Anda.',
+                        'button_text' => 'Lihat Harga',
                         'button_link' => '/preise',
                     ],
                     'fr' => [
@@ -155,7 +154,7 @@ class ContentSeeder extends Seeder
                 ]
             ],
 
-            // CTA Section (Call-To-Action)
+            // CTA Section
             [
                 'section_key' => 'cta_section',
                 'content_type' => 'text',
@@ -172,11 +171,11 @@ class ContentSeeder extends Seeder
                         'button_text' => 'Start Free Trial',
                         'button_link' => '/kontakt',
                     ],
-                    'de' => [
-                        'title' => 'Bereit zu starten?',
-                        'subtitle' => 'Schließen Sie sich Tausenden zufriedener Kunden an',
-                        'description' => 'Starten Sie noch heute Ihre kostenlose Testversion.',
-                        'button_text' => 'Kostenlos testen',
+                    'id' => [
+                        'title' => 'Siap untuk Memulai?',
+                        'subtitle' => 'Bergabunglah dengan Ribuan Pelanggan Bahagia',
+                        'description' => 'Mulai uji coba gratis Anda hari ini dan transformasikan bisnis Anda.',
+                        'button_text' => 'Mulai Uji Coba Gratis',
                         'button_link' => '/kontakt',
                     ],
                     'fr' => [
@@ -206,11 +205,11 @@ class ContentSeeder extends Seeder
                         'button_text' => 'Learn More',
                         'button_link' => '#',
                     ],
-                    'de' => [
-                        'title' => 'Über Mundial',
-                        'subtitle' => 'Führende Innovation',
-                        'description' => 'Mehr als 10 Jahre Erfahrung bei der Bereitstellung von Weltklasse-Lösungen.',
-                        'button_text' => 'Mehr erfahren',
+                    'id' => [
+                        'title' => 'Tentang Mundial',
+                        'subtitle' => 'Inovasi Terdepan',
+                        'description' => 'Lebih dari 10 tahun pengalaman memberikan solusi kelas dunia.',
+                        'button_text' => 'Pelajari Lebih Lanjut',
                         'button_link' => '#',
                     ],
                     'fr' => [
@@ -240,11 +239,11 @@ class ContentSeeder extends Seeder
                         'button_text' => 'Our Team',
                         'button_link' => '/team',
                     ],
-                    'de' => [
-                        'title' => 'Über Uns',
-                        'subtitle' => 'Unser Weg',
-                        'description' => 'Seit 2016 liefert Mundial innovative Lösungen für Unternehmen weltweit.',
-                        'button_text' => 'Unser Team',
+                    'id' => [
+                        'title' => 'Tentang Kami',
+                        'subtitle' => 'Perjalanan Kami',
+                        'description' => 'Didirikan pada 2016, Mundial telah memberikan solusi inovatif kepada bisnis di seluruh dunia.',
+                        'button_text' => 'Tim Kami',
                         'button_link' => '/team',
                     ],
                     'fr' => [
@@ -274,11 +273,11 @@ class ContentSeeder extends Seeder
                         'button_text' => 'Read Stories',
                         'button_link' => '/testimonials',
                     ],
-                    'de' => [
-                        'title' => 'Was unsere Kunden sagen',
-                        'subtitle' => 'Erfolggeschichten',
-                        'description' => 'Hören Sie von unseren zufriedenen Kunden von ihrem Erlebnis mit Mundial.',
-                        'button_text' => 'Geschichten lesen',
+                    'id' => [
+                        'title' => 'Apa Kata Klien Kami',
+                        'subtitle' => 'Kisah Sukses',
+                        'description' => 'Dengarkan dari pelanggan puas kami tentang pengalaman mereka dengan Mundial.',
+                        'button_text' => 'Baca Kisah',
                         'button_link' => '/testimonials',
                     ],
                     'fr' => [
@@ -297,7 +296,6 @@ class ContentSeeder extends Seeder
             $translations = $content['translations'];
             unset($content['translations']);
 
-            // Prepare JSON translations
             $titleTrans = [];
             $subtitleTrans = [];
             $descriptionTrans = [];
@@ -327,139 +325,36 @@ class ContentSeeder extends Seeder
         // ============================================
         
         $globalTranslations = [
-            // Site title
-            [
-                'key' => 'site.title',
-                'language' => 'en',
-                'section' => null,
-                'value' => 'Mundial - Global Solutions',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'site.title',
-                'language' => 'de',
-                'section' => null,
-                'value' => 'Mundial - Globale Lösungen',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'site.title',
-                'language' => 'fr',
-                'section' => null,
-                'value' => 'Mundial - Solutions Mondiales',
-                'type' => 'text',
-            ],
-            // Footer copyright
-            [
-                'key' => 'footer.copyright',
-                'language' => 'en',
-                'section' => 'footer',
-                'value' => '© 2026 Mundial. All rights reserved.',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'footer.copyright',
-                'language' => 'de',
-                'section' => 'footer',
-                'value' => '© 2026 Mundial. Alle Rechte vorbehalten.',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'footer.copyright',
-                'language' => 'fr',
-                'section' => 'footer',
-                'value' => '© 2026 Mundial. Tous droits réservés.',
-                'type' => 'text',
-            ],
-            // Navigation
-            [
-                'key' => 'nav.home',
-                'language' => 'en',
-                'section' => 'navigation',
-                'value' => 'Home',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'nav.home',
-                'language' => 'de',
-                'section' => 'navigation',
-                'value' => 'Startseite',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'nav.home',
-                'language' => 'fr',
-                'section' => 'navigation',
-                'value' => 'Accueil',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'nav.about',
-                'language' => 'en',
-                'section' => 'navigation',
-                'value' => 'About',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'nav.about',
-                'language' => 'de',
-                'section' => 'navigation',
-                'value' => 'Über uns',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'nav.about',
-                'language' => 'fr',
-                'section' => 'navigation',
-                'value' => 'À propos',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'nav.services',
-                'language' => 'en',
-                'section' => 'navigation',
-                'value' => 'Services',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'nav.services',
-                'language' => 'de',
-                'section' => 'navigation',
-                'value' => 'Dienstleistungen',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'nav.services',
-                'language' => 'fr',
-                'section' => 'navigation',
-                'value' => 'Services',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'nav.contact',
-                'language' => 'en',
-                'section' => 'navigation',
-                'value' => 'Contact',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'nav.contact',
-                'language' => 'de',
-                'section' => 'navigation',
-                'value' => 'Kontakt',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'nav.contact',
-                'language' => 'fr',
-                'section' => 'navigation',
-                'value' => 'Contact',
-                'type' => 'text',
-            ],
+            ['key' => 'site.title', 'language' => 'en', 'section' => null, 'value' => 'Mundial - Global Solutions', 'type' => 'text'],
+            ['key' => 'site.title', 'language' => 'id', 'section' => null, 'value' => 'Mundial - Solusi Global', 'type' => 'text'],
+            ['key' => 'site.title', 'language' => 'fr', 'section' => null, 'value' => 'Mundial - Solutions Mondiales', 'type' => 'text'],
+
+            ['key' => 'footer.copyright', 'language' => 'en', 'section' => 'footer', 'value' => '© 2026 Mundial. All rights reserved.', 'type' => 'text'],
+            ['key' => 'footer.copyright', 'language' => 'id', 'section' => 'footer', 'value' => '© 2026 Mundial. Semua hak dilindungi.', 'type' => 'text'],
+            ['key' => 'footer.copyright', 'language' => 'fr', 'section' => 'footer', 'value' => '© 2026 Mundial. Tous droits réservés.', 'type' => 'text'],
+
+            ['key' => 'nav.home', 'language' => 'en', 'section' => 'navigation', 'value' => 'Home', 'type' => 'text'],
+            ['key' => 'nav.home', 'language' => 'id', 'section' => 'navigation', 'value' => 'Beranda', 'type' => 'text'],
+            ['key' => 'nav.home', 'language' => 'fr', 'section' => 'navigation', 'value' => 'Accueil', 'type' => 'text'],
+
+            ['key' => 'nav.about', 'language' => 'en', 'section' => 'navigation', 'value' => 'About', 'type' => 'text'],
+            ['key' => 'nav.about', 'language' => 'id', 'section' => 'navigation', 'value' => 'Tentang', 'type' => 'text'],
+            ['key' => 'nav.about', 'language' => 'fr', 'section' => 'navigation', 'value' => 'À propos', 'type' => 'text'],
+
+            ['key' => 'nav.services', 'language' => 'en', 'section' => 'navigation', 'value' => 'Services', 'type' => 'text'],
+            ['key' => 'nav.services', 'language' => 'id', 'section' => 'navigation', 'value' => 'Layanan', 'type' => 'text'],
+            ['key' => 'nav.services', 'language' => 'fr', 'section' => 'navigation', 'value' => 'Services', 'type' => 'text'],
+
+            ['key' => 'nav.contact', 'language' => 'en', 'section' => 'navigation', 'value' => 'Contact', 'type' => 'text'],
+            ['key' => 'nav.contact', 'language' => 'id', 'section' => 'navigation', 'value' => 'Hubungi Kami', 'type' => 'text'],
+            ['key' => 'nav.contact', 'language' => 'fr', 'section' => 'navigation', 'value' => 'Contact', 'type' => 'text'],
         ];
 
         foreach ($globalTranslations as $trans) {
-            Translation::create($trans);
+            Translation::updateOrCreate(
+                ['key' => $trans['key'], 'language' => $trans['language']],
+                $trans
+            );
         }
     }
 }

@@ -2,9 +2,9 @@
 <html data-wf-page="6044f3166ba35f6e3a02dc77" data-wf-site="6044f3166ba35f926402dc6b">
 <head>
   <meta charset="utf-8">
-  <title>AUFGABE</title>
-  <meta content="AUFGABE" property="og:title">
-  <meta content="AUFGABE" property="twitter:title">
+  <title>TUGAS</title>
+  <meta content="TUGAS" property="og:title">
+  <meta content="TUGAS" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="{{ asset("css/normalize.css") }}" rel="stylesheet" type="text/css">
   <link href="{{ asset("css/components.css") }}" rel="stylesheet" type="text/css">
@@ -49,12 +49,12 @@
       </div>
     </div>
     <div class="container-9 w-container">
-      <h1 class="heading-10">Tâche 2</h1>
-      <p class="paragraph-9">Vous êtes fréquemment au centre de loisirs Mundial et vous souhaitez acheter un abonnement annuel via le site web. <br><br><strong>Note</strong> : Imaginez que vous vous appelez "Brigitte Favre", vous avez 45 ans et vous n'avez pas une carte de crédit.</p>
+      <h1 class="heading-10">Tugas 2</h1>
+      <p class="paragraph-9">Anda sering mengunjungi pusat hiburan Mundial dan ingin membeli langganan tahunan melalui situs web. <br><br><strong>Catatan</strong>: Bayangkan Anda bernama "Brigitte Favre", berusia 45 tahun dan tidak memiliki kartu kredit.</p>
       <div class="div-block-7">
         <div class="w-layout-grid grid-2">
-          <a href="{{ route("task2Cancel") }}" class="button3 w-button">Sauter la tâche</a>
-          <div class="w-embed w-script"><button class="button" onclick="goBack()">Continuer</button>
+          <a href="{{ route("task2Cancel") }}" class="button3 w-button">Lewati Tugas</a>
+          <div class="w-embed w-script"><button class="button" onclick="goBack()">Lanjutkan</button>
             <script>
 function goBack() {
   window.history.back();

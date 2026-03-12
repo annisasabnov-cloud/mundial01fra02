@@ -27,6 +27,12 @@
   });
   </script>
 
+  <style>
+  .preise-table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; }
+  .preise-table td, .preise-table th { border: 1px solid #dddddd; text-align: left; padding: 8px; }
+  .preise-table tr:nth-child(even) { background-color: #F9F9F9; }
+  </style>
+
 </head>
 <body>
   <main id="main-content" class="main-content">
@@ -44,314 +50,32 @@
           <a href="{{ route("angebote2.kaufMundialcard01") }}" class="primary-button-card-offer w-button">{{ trans_db('button.buy_now', null, 'Buy Now') }}</a>
         </div>
       </div>
+
+      {{-- Table 1: Swimming Pool --}}
       <div class="html-embed w-embed">
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-tr:nth-child(even) {
-  background-color: #F9F9F9;
-}
-</style>
-        </head>
-        <body>
-          <h3>Entrée piscine</h3>
-          <table>
-            <tr>
-              <th></th>
-              <th>Dès 18 ans</th>
-              <th>6-17 ans</th>
-              <th>Moins de 6 ans</th>
-            </tr>
-            <tr>
-              <td>Carte journalière</td>
-              <td>30.-</td>
-              <td>20.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Entrée simple (3h)</td>
-              <td>20.-</td>
-              <td>15.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Entrée simple (1.5h)</td>
-              <td>15.-</td>
-              <td>10.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Prix/Personne pour 30 minutes supplémentaires</td>
-              <td>5.-</td>
-              <td>5.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Carte de 10 (Admission de jour)</td>
-              <td>270.-</td>
-              <td>180.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Carte de 10 (3h)</td>
-              <td>180.-</td>
-              <td>135.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Carte de 10 (1.5h)</td>
-              <td>135.-</td>
-              <td>90.-</td>
-              <td>gratuit</td>
-            </tr>
-            Les enfants de moins de 12 ans doivent être accompagnés par un adulte dans la piscine intérieure.
-          </table>
-        </body>
-        </html>
+        {!! trans_db('preise.pool_table', null, '') !!}
       </div>
+
+      {{-- Table 2: Sauna --}}
       <div class="w-embed">
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-tr:nth-child(even) {
-  background-color: #F9F9F9;
-}
-</style>
-        </head>
-        <body>
-          <h3>Entrée sauna et douche à vapeur</h3>
-          <table>
-            <tr>
-              <th></th>
-              <th>Dès 18 ans</th>
-              <th>6-17 ans</th>
-              <th>Moins de 6 ans</th>
-            </tr>
-            <tr>
-              <td>Entrée simple (3h)</td>
-              <td>25.-</td>
-              <td>15.-</td>
-              <td>Entrée interdite</td>
-            </tr>
-            <tr>
-              <td>Entrée simple (1.5h)</td>
-              <td>20.-</td>
-              <td>10.-</td>
-              <td>Entrée interdite</td>
-            </tr>
-            <tr>
-              <td>Prix/personne pour 30 minutes supplémentaires</td>
-              <td>5.-</td>
-              <td>5.-</td>
-              <td>Entrée interdite</td>
-            </tr>
-            <tr>
-              <td>Carte de 10 (3h)</td>
-              <td>225.-</td>
-              <td>125.-</td>
-              <td>Entrée interdite</td>
-            </tr>
-            <tr>
-              <td>Carte de 10 (1.5h)</td>
-              <td>180.-</td>
-              <td>90.-</td>
-              <td>Entrée interdite</td>
-            </tr>
-            Les enfants de moins de 16 ans doivent être accompagnés par un adulte dans le sauna et la douche à vapeur.
-          </table>
-        </body>
-        </html>
+        {!! trans_db('preise.sauna_table', null, '') !!}
       </div>
+
+      {{-- Table 3: Bowling --}}
       <div class="w-embed">
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-tr:nth-child(even) {
-  background-color: #F9F9F9;
-}
-</style>
-        </head>
-        <body>
-          <h3>Entrée piste de Bowling</h3>
-          <table>
-            <tr>
-              <th></th>
-              <th>Dès 18 ans</th>
-              <th>6-17 ans</th>
-              <th>Moins de 6 ans</th>
-            </tr>
-            <tr>
-              <td>Entrée par personne pour 1 tour de jeu</td>
-              <td>9.-</td>
-              <td>5.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Carte de 10</td>
-              <td>81.-</td>
-              <td>45.-</td>
-              <td>gratuit</td>
-            </tr>
-            Les enfants de moins de 12 ans doivent être accompagnés par un adulte sur la piste de bowling.
-          </table>
-        </body>
-        </html>
+        {!! trans_db('preise.bowling_table', null, '') !!}
       </div>
+
+      {{-- Table 4: Mini Golf --}}
       <div class="w-embed">
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-tr:nth-child(even) {
-  background-color: #F9F9F9;
-}
-</style>
-        </head>
-        <body>
-          <h3>Entrée Mini-Golf</h3>
-          <table>
-            <tr>
-              <th></th>
-              <th>Dès 18 ans</th>
-              <th>6-17 ans</th>
-              <th>Moins de 6 ans</th>
-            </tr>
-            <tr>
-              <td>Entrée par personne pour 1 tour de jeu</td>
-              <td>9.-</td>
-              <td>5.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Carte de 10</td>
-              <td>81.-</td>
-              <td>45.-</td>
-              <td>gratuit</td>
-            </tr>
-            Les enfants de moins de 12 ans doivent être accompagnés d'un adulte lorsqu'ils jouent au mini-golf.
-          </table>
-        </body>
-        </html>
+        {!! trans_db('preise.minigolf_table', null, '') !!}
       </div>
+
+      {{-- Table 5: All Facilities --}}
       <div class="w-embed">
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-</style>
-        </head>
-        <body>
-          <h3>Entrée pour l'ensemble du centre de loisirs (Toutes les offres)</h3>
-          <table>
-            <tr>
-              <th></th>
-              <th>Dès 18 ans</th>
-              <th>6-17 ans</th>
-              <th>Moins de 6 ans</th>
-            </tr>
-            <tr>
-              <td>Carte journalière</td>
-              <td>55.-</td>
-              <td>45.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Entrée simple (3h)</td>
-              <td>45.-</td>
-              <td>35.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Entrée simple (1.5h)</td>
-              <td>35.-</td>
-              <td>25.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Prix/personne pour 30 minutes supplémentaires</td>
-              <td>5.-</td>
-              <td>5.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Carte de 10 (Admission de jour)</td>
-              <td>495.-</td>
-              <td>405.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Carte de 10 (3h)</td>
-              <td>405.-</td>
-              <td>315.-</td>
-              <td>gratuit</td>
-            </tr>
-            <tr>
-              <td>Carte de 10 (1.5h)</td>
-              <td>315.-</td>
-              <td>225.-</td>
-              <td>gratuit</td>
-            </tr>
-            Dans le sauna et dans la douche à vapeur, les enfants de moins de 16 ans doivent être accompagnés d'une personne adulte.
-          </table>
-        </body>
-        </html>
+        {!! trans_db('preise.all_table', null, '') !!}
       </div>
+
       <div data-duration-in="300" data-duration-out="100" class="w-tabs">
         <div class="w-tab-content">
           <div data-w-tab="Tab 2" class="w-tab-pane"></div>
@@ -369,7 +93,7 @@ tr:nth-child(even) {
           <a href="{{ route("kontakt") }}" class="nav-link-2 w-nav-link">{{ trans_db('nav.contact') }}</a>
           <x-language-selector />
         </nav>
-        <a href="{{ route("aufgabe") }}" class="button-task-header w-button">Tâche</a>
+        <a href="{{ route("aufgabe") }}" class="button-task-header w-button">{{ trans_db('angebote2.common.task_button', null, 'Task') }}</a>
         <div class="menu-button w-nav-button">
           <div class="icon w-icon-nav-menu"></div>
         </div>
@@ -382,9 +106,14 @@ tr:nth-child(even) {
   <div>
     <div class="container-7 w-container">
       <div class="div-block-16">
-        <h3 class="heading-9">Mode de paiement</h3>
-        <p class="paragraph-7">Tous les prix sont en francs suisses. Les changements de prix sont possibles. Vous pouvez payer le tarif d&#x27;entrée en espèces (francs ou euros), ou par carte bancaire.<br></p>
-        <div class="div-block-17"><img src="{{ asset("images/twint.svg") }}" loading="lazy" alt="" class="image-9"><img src="{{ asset("images/visa.svg") }}" loading="lazy" alt="" class="image-9"><img src="{{ asset("images/mastercard.svg") }}" loading="lazy" alt="" class="image-9"><img src="{{ asset("images/maestro.svg") }}" loading="lazy" alt="" class="image-9"><img src="{{ asset("images/postfinance.svg") }}" loading="lazy" alt="" class="image-9"><img src="{{ asset("images/reka.svg") }}" loading="lazy" alt="" class="image-9"></div>
+        <h3 class="heading-9">{{ trans_db('preise.payment.heading', null, 'Payment Methods') }}</h3>
+        <p class="paragraph-7">{!! trans_db('preise.payment.desc', null, '') !!}<br></p>
+        <div class="div-block-17">
+          <img src="{{ asset("images/visa.svg") }}" loading="lazy" alt="" class="image-9">
+          <img src="{{ asset("images/mastercard.svg") }}" loading="lazy" alt="" class="image-9">
+          <img src="{{ asset("images/gopay.png") }}" loading="lazy" alt="" class="image-9">
+          <img style="height: 55px" src="{{ asset("images/qrismastr.webp") }}" loading="lazy" alt="" class="image-9">
+        </div>
       </div>
     </div>
   </div>

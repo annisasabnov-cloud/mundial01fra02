@@ -5,6 +5,20 @@ use Illuminate\Support\Facades\Route;
 // Language switching route
 Route::get('/lang/{language}', [\App\Http\Controllers\LanguageController::class, 'switch'])->name('language.switch');
 
+// TEMPORARY: Run seeder to apply Indonesian translations (DELETE AFTER USE)
+Route::get('/run-seed-id-lang-9x8k', function () {
+    // Delete German entries from translations table
+    \App\Models\Translation::where('language', 'de')->delete();
+    // Run PageTranslationSeeder
+    \Artisan::call('db:seed', ['--class' => 'PageTranslationSeeder', '--force' => true]);
+    // Clear all cache
+    \Artisan::call('cache:clear');
+    \Artisan::call('view:clear');
+    return 'Done! Indonesian translations applied. German entries deleted. Cache cleared. Please remove this route.';
+});
+
+
+
 // Main pages
 Route::get('/', function () {
     return view('index');

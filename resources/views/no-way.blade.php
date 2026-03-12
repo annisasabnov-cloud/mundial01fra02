@@ -2,9 +2,9 @@
 <html data-wf-page="6044f3166ba35f45aa02dc88" data-wf-site="6044f3166ba35f926402dc6b">
 <head>
   <meta charset="utf-8">
-  <title>no_way</title>
-  <meta content="no_way" property="og:title">
-  <meta content="no_way" property="twitter:title">
+  <title>{{ trans_db('page.noway.title', null, 'No Way - Mundial') }}</title>
+  <meta content="{{ trans_db('page.noway.title', null, 'No Way - Mundial') }}" property="og:title">
+  <meta content="{{ trans_db('page.noway.title', null, 'No Way - Mundial') }}" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="{{ asset("css/normalize.css") }}" rel="stylesheet" type="text/css">
   <link href="{{ asset("css/components.css") }}" rel="stylesheet" type="text/css">
@@ -34,47 +34,47 @@
       <div data-duration-in="300" data-duration-out="100" class="w-tabs">
         <div class="w-tab-content">
           <div data-w-tab="Tab 1" class="w-tab-pane">
-            <h4>Kinder-Geburtstag auf der Bowling-Bahn</h4>
-            <p>Das ist eine tolle Idee: Feiern Sie den Geburtstag von Ihren Kindern auf der Bowling-Bahn. Die Kinder bekommen von uns feines Essen und feine Getränke. Passen Sie gut auf die Kinder auf. Die Kinder haben sicher viel Spass beim Spiel.</p>
-            <div>Geburtstags-Feste für Kinder gibt es: von Freitag bis Sonntag, ab 15:00 Uhr bis 19:00 Uhr. Der Eintritt für 1 Kind kostet nur 9 Franken. Zum Geburtstags-Fest für Kinder gehören:<br>‍</div>
+            <h4>{{ trans_db('noway.tab1.title', null, "Children's Birthday at the Bowling Alley") }}</h4>
+            <p>{!! trans_db('noway.tab1.intro', null, 'A great idea: celebrate your children\'s birthday at the bowling alley. The children get delicious food and drinks from us. The children will certainly have a lot of fun playing.') !!}</p>
+            <div>{!! trans_db('noway.tab1.schedule', null, 'Children\'s birthday parties are available: Friday to Sunday, from 3:00 PM to 7:00 PM. Admission for 1 child costs only 9 francs. Children\'s birthday parties include:') !!}<br>‍</div>
             <div href="" class="w-richtext">
               <ul role="list">
-                <li>2 Spiel-Runden Bowling</li>
-                <li>Extra-Schuhe für die Bowling-Bahn</li>
-                <li>Für jedes Kind ein Getränk ohne Alkohol</li>
-                <li>Urkunden für alle Mit-Spieler</li>
-                <li>1 Tüte Pop-Corn</li>
-                <li>Geschmückte Bowling-Bahn</li>
-                <li>2 Kaffees für die Eltern</li>
+                <li>{{ trans_db('noway.tab1.item1', null, '2 rounds of bowling') }}</li>
+                <li>{{ trans_db('noway.tab1.item2', null, 'Bowling shoes included') }}</li>
+                <li>{{ trans_db('noway.tab1.item3', null, '1 non-alcoholic drink per child') }}</li>
+                <li>{{ trans_db('noway.tab1.item4', null, 'Certificates for all players') }}</li>
+                <li>{{ trans_db('noway.tab1.item5', null, '1 bag of popcorn') }}</li>
+                <li>{{ trans_db('noway.tab1.item6', null, 'Decorated bowling lane') }}</li>
+                <li>{{ trans_db('noway.tab1.item7', null, '2 coffees for parents') }}</li>
               </ul>
-              <p>Das Angebot ist nur bis zum 14. Geburtstag gültig. Es müssen mindestens 6 Kinder an das Geburtstags-Fest kommen. Sie müssen das Geburtstags-Fest schon vor dem Geburtstags-Fest buchen. Wenn Sie etwas mehr Eintritt bezahlen, bekommen die Kinder auch ein Kinder-Menü. Das Kinder-Menü ist: Chicken Nuggets mit Pommes Frites.<br><br>Buchen Sie einen Termin für den Kinder-Geburtstag. Wir machen Ihnen gerne ein Angebot für einen tollen Kinder-Geburtstag auf der Bowling-Bahn. Wir helfen Ihnen beim Planen vom Kinder-Geburtstag. Und wir helfen Ihnen gerne auch mit dem Essen und den Getränken. Buchen Sie jetzt einen Termin. Oder schreiben Sie uns. Klicken Sie dafür auf diesen Link: <strong>nehmen Sie Kontakt mit uns auf.</strong></p>
+              <p>{!! trans_db('noway.tab1.footer', null, 'The offer is only valid up to the 14th birthday. At least 6 children must attend the birthday party. You must book the birthday party in advance. For an additional fee, children can also receive a children\'s menu: Chicken Nuggets with French Fries.<br><br>Book an appointment for the children\'s birthday. We are happy to make you an offer for a great children\'s birthday at the bowling alley.') !!}</p>
               <p>‍</p>
             </div>
-            <a href="#cards-section" class="button2 w-button">Termin buchen</a>
+            <a href="#cards-section" class="button2 w-button">{{ trans_db('noway.book_appointment', null, 'Book Appointment') }}</a>
           </div>
           <div data-w-tab="Tab 2" class="w-tab-pane">
-            <h4>Geburtstags-Angebot für Jugendliche</h4>
-            <div>Geburtstags-Feste für Jugendliche gibt es: von Donnerstag bis Sonntag, ab 18:00 Uhr. Der Eintritt kostet nur 52 Franken für 1 Bahn. Auf 1 Bahn können 2 bis 8 Personen spielen. Zum Geburtstags-Angebot gehören:</div>
+            <h4>{{ trans_db('noway.tab2.title', null, 'Birthday Offer for Teenagers') }}</h4>
+            <div>{!! trans_db('noway.tab2.intro', null, 'Birthday parties for teenagers are available: Thursday to Sunday, from 6:00 PM. Admission costs only 52 francs for 1 lane. 2 to 8 people can play on 1 lane. The birthday offer includes:') !!}</div>
             <div href="" class="w-richtext">
               <ul role="list">
-                <li>2 Spiel-Runden Bowling</li>
-                <li>Extra-Schuhe für die Bowling-Bahn</li>
-                <li>2 Flaschen Getränke ohne Alkohol</li>
-                <li>1 Teller mit Knabber-Gebäck pro Bahn</li>
+                <li>{{ trans_db('noway.tab1.item1', null, '2 rounds of bowling') }}</li>
+                <li>{{ trans_db('noway.tab1.item2', null, 'Bowling shoes included') }}</li>
+                <li>{{ trans_db('noway.tab2.item3', null, '2 bottles of non-alcoholic drinks') }}</li>
+                <li>{{ trans_db('noway.tab2.item4', null, '1 plate of snacks per lane') }}</li>
               </ul>
-              <p>Das Geburtstags-Angebot ist für Jugendliche gültig, die 15 bis 18 Jahre alt sind.</p>
+              <p>{{ trans_db('noway.tab2.footer', null, 'The birthday offer is valid for teenagers aged 15 to 18 years.') }}</p>
             </div>
-            <a href="#cards-section" class="button2 w-button">Termin buchen</a>
+            <a href="#cards-section" class="button2 w-button">{{ trans_db('noway.book_appointment', null, 'Book Appointment') }}</a>
           </div>
           <div data-w-tab="Tab 3" class="w-tab-pane">
-            <h4>Geburtstags-Angebot für Erwachsene 1</h4>
-            <div>Geburtstags-Feste für Erwachsene gibt es: von Donnerstag bis Sonntag, ab 18:00 Uhr. Der Eintritt kostet nur 52 Franken für 1 Bahn. Auf 1 Bahn können 2 bis 8 Personen spielen. Zum Geburtstags-Angebot 1 gehören:</div>
+            <h4>{{ trans_db('noway.tab3.title', null, 'Birthday Offer for Adults 1') }}</h4>
+            <div>{!! trans_db('noway.tab3.intro', null, 'Birthday parties for adults are available: Thursday to Sunday, from 6:00 PM. Admission costs only 52 francs for 1 lane. 2 to 8 people can play on 1 lane. Birthday offer 1 includes:') !!}</div>
             <div href="" class="w-richtext">
               <ul role="list">
-                <li>2 Spiel-Runden Bowling</li>
-                <li>Extra-Schuhe für die Bowling-Bahn</li>
-                <li>2 Flaschen Getränke ohne Alkohol</li>
-                <li>1 Teller mit Knabber-Gebäck pro Bahn</li>
+                <li>{{ trans_db('noway.tab1.item1', null, '2 rounds of bowling') }}</li>
+                <li>{{ trans_db('noway.tab1.item2', null, 'Bowling shoes included') }}</li>
+                <li>{{ trans_db('noway.tab2.item3', null, '2 bottles of non-alcoholic drinks') }}</li>
+                <li>{{ trans_db('noway.tab2.item4', null, '1 plate of snacks per lane') }}</li>
               </ul>
             </div>
           </div>
@@ -82,10 +82,10 @@
       </div>
     </div>
     <div class="container-9 w-container">
-          <h1 class="heading-10">Attention</h1>
-          <p class="paragraph-9">Cette page n&#x27;est pas nécessaire pour résoudre la tâche. Veuillez trouver un autre moyen de résoudre la tâche.</p>
+          <h1 class="heading-10">{{ trans_db('noway.attention.heading', null, 'Attention') }}</h1>
+          <p class="paragraph-9">{{ trans_db('noway.attention.body', null, 'This page is not needed to complete the task. Please find another way to complete the task.') }}</p>
           <div class="div-block-7">
-            <div class="w-embed w-script"><button class="button" onclick="goBack()">Continuer la tâche</button>
+            <div class="w-embed w-script"><button class="button" onclick="goBack()">{{ trans_db('noway.attention.button', null, 'Continue task') }}</button>
               <script>
 function goBack() {
   window.history.back();

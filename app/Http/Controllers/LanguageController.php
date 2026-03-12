@@ -8,7 +8,7 @@ class LanguageController extends Controller
 {
     public function switch($language)
     {
-        $supportedLanguages = ['en', 'fr', 'de', 'es', 'it'];
+        $supportedLanguages = ['en', 'fr', 'id', 'es', 'it'];
         
         if (in_array($language, $supportedLanguages)) {
             session(['language' => $language]);

@@ -2,9 +2,9 @@
 <html data-wf-page="6044f3166ba35f67e702dc6e" data-wf-site="6044f3166ba35f926402dc6b">
 <head>
   <meta charset="utf-8">
-  <title>{!! trans_db('angebote3.title', null, 'Nos offres') !!}</title>
-  <meta content="{!! trans_db('angebote3.title', null, 'Nos offres') !!}" property="og:title">
-  <meta content="{!! trans_db('angebote3.title', null, 'Nos offres') !!}" property="twitter:title">
+  <title>{!! trans_db('angebote3.title', null, 'Penawaran Kami') !!}</title>
+  <meta content="{!! trans_db('angebote3.title', null, 'Penawaran Kami') !!}" property="og:title">
+  <meta content="{!! trans_db('angebote3.title', null, 'Penawaran Kami') !!}" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="{{ asset("css/normalize.css") }}" rel="stylesheet" type="text/css">
   <link href="{{ asset("css/components.css") }}" rel="stylesheet" type="text/css">
@@ -41,39 +41,39 @@
       <div class="cards-grid-container-3">
         <a href="{{ route("angebote2.hallenbad") }}" class="angebot-block w-inline-block">
           <div class="div-angebot-picture"><img src="{{ asset("images/logoicon_swim_green.svg") }}" loading="lazy" alt="" class="logoicon_01"></div>
-          <h3 class="heading-8">{!! trans_db('angebote3.pool.title', null, 'Piscine') !!}</h3>
-          <p class="paragraph-6">{!! trans_db('angebote3.pool.desc', null, "La natation est saine et renforce le corps et l'âme de nous, humains. Profitez de la baignade dans une atmosphère agréable dans notre piscine intérieure. Il y en a pour tous les goûts, des jeunes aux moins jeunes.") !!}</p>
-          <div class="text-block-5">{!! trans_db('angebote3.learn_more', null, 'En savoir plus') !!}</div>
+          <h3 class="heading-8">{!! trans_db('angebote3.pool.title', null, 'Kolam Renang') !!}</h3>
+          <p class="paragraph-6">{!! trans_db('angebote3.pool.desc', null, "Berenang itu menyehatkan dan memperkuat jiwa dan raga. Nikmati berenang dalam suasana yang menyenangkan di kolam renang dalam ruangan kami. Ada untuk semua selera, dari yang muda hingga yang tua.") !!}</p>
+          <div class="text-block-5">{!! trans_db('angebote3.learn_more', null, 'Pelajari lebih lanjut') !!}</div>
         </a>
         <a href="{{ route("angebote2.o02") }}" class="angebot-block w-inline-block">
           <div class="div-angebot-picture-2"><img src="{{ asset("images/logoicon_sauna_green.svg") }}" loading="lazy" alt="" class="logoicon_02"></div>
           <h3 class="heading-8">{!! trans_db('angebote3.sauna.title', null, 'Sauna') !!}</h3>
-          <p class="paragraph-6">{!! trans_db('angebote3.sauna.desc', null, "Que ce soit en hiver ou en été, le sauna est une forme particulière de traitement chaud-froid qui favorise la santé et la détente. Entre autres, le sauna stimule le métabolisme, stabilise le système cardiovasculaire et aide à entraîner le système vasculaire.") !!}</p>
-          <div class="text-block-5">{!! trans_db('angebote3.learn_more', null, 'En savoir plus') !!}</div>
+          <p class="paragraph-6">{!! trans_db('angebote3.sauna.desc', null, "Baik di musim dingin maupun musim panas, sauna adalah bentuk perawatan panas-dingin khusus yang meningkatkan kesehatan dan relaksasi. Sauna merangsang metabolisme, menstabilkan sistem kardiovaskular, dan membantu melatih sistem pembuluh darah.") !!}</p>
+          <div class="text-block-5">{!! trans_db('angebote3.learn_more', null, 'Pelajari lebih lanjut') !!}</div>
         </a>
         <a href="{{ route("angebote2.minigolf") }}" class="angebot-block w-inline-block">
           <div class="div-angebot-picture-3"><img src="{{ asset("images/logoicon_golf_green.svg") }}" loading="lazy" alt="" class="logoicon_03"></div>
-          <h3 class="heading-8">{!! trans_db('angebote3.minigolf.title', null, 'Minigolf') !!}</h3>
-          <p class="paragraph-6">{!! trans_db('angebote3.minigolf.desc', null, "Profitez d'une partie de mini-golf sur notre terrain de mini-golf. Notre mini-golf de 20 trous est situé au cœur de notre parc naturel. Nature et plaisir pour toute la famille.") !!}</p>
-          <div class="text-block-5">{!! trans_db('angebote3.learn_more', null, 'En savoir plus') !!}</div>
+          <h3 class="heading-8">{!! trans_db('angebote3.minigolf.title', null, 'Mini Golf') !!}</h3>
+          <p class="paragraph-6">{!! trans_db('angebote3.minigolf.desc', null, "Nikmati permainan mini golf di lapangan mini golf kami. Mini golf 20 lubang kami terletak di jantung taman alam kami. Alam dan kesenangan untuk seluruh keluarga.") !!}</p>
+          <div class="text-block-5">{!! trans_db('angebote3.learn_more', null, 'Pelajari lebih lanjut') !!}</div>
         </a>
         <a href="{{ route("angebote2.bowling") }}" class="angebot-block w-inline-block">
           <div class="div-angebot-picture-4"><img src="{{ asset("images/logoicon_bowling_green.svg") }}" loading="lazy" alt="" class="logoicon_04"></div>
           <h3 class="heading-8">{!! trans_db('angebote3.bowling.title', null, 'Bowling') !!}</h3>
-          <p class="paragraph-6">{!! trans_db('angebote3.bowling.desc', null, "Le bowling est un jeu qui s'apparente au jeu de quilles. Il combine le sport et le plaisir. Vous pouvez y jouer avec des amis ou en famille. C'est pourquoi les gens aiment jouer au bowling. Le centre de loisirs Mundial dispose d'une grande installation avec de nombreuses pistes de bowling.") !!}</p>
-          <div class="text-block-5">{!! trans_db('angebote3.learn_more', null, 'En savoir plus') !!}</div>
+          <p class="paragraph-6">{!! trans_db('angebote3.bowling.desc', null, "Bowling adalah olahraga yang menggabungkan kesenangan dan kompetisi. Anda bisa memainkannya bersama teman atau keluarga. Itulah mengapa orang suka bowling. Pusat hiburan Mundial memiliki fasilitas besar dengan banyak lintasan bowling.") !!}</p>
+          <div class="text-block-5">{!! trans_db('angebote3.learn_more', null, 'Pelajari lebih lanjut') !!}</div>
         </a>
         <a href="{{ route("angebote2.geburtstagsfeier") }}" class="angebot-block w-inline-block">
           <div class="div-angebot-picture-5"><img src="{{ asset("images/logoicon_birthday_green.svg") }}" loading="lazy" alt="" class="logoicon_05"></div>
-          <h3 class="heading-8">{!! trans_db('angebote3.birthday.title', null, "Fête d'anniversaire") !!}</h3>
-          <p class="paragraph-6">{!! trans_db('angebote3.birthday.desc', null, "Commencez la nouvelle année de votre vie sportive et active. Célébrez les fêtes d'anniversaire sur la piste de bowling. Venez vous amuser sur notre piste de bowling !") !!}</p>
-          <div class="text-block-5">{!! trans_db('angebote3.learn_more', null, 'En savoir plus') !!}</div>
+          <h3 class="heading-8">{!! trans_db('angebote3.birthday.title', null, "Pesta Ulang Tahun") !!}</h3>
+          <p class="paragraph-6">{!! trans_db('angebote3.birthday.desc', null, "Mulailah tahun baru kehidupan olahraga Anda yang aktif. Rayakan pesta ulang tahun di lintasan bowling. Datang dan bersenang-senang di lintasan bowling kami!") !!}</p>
+          <div class="text-block-5">{!! trans_db('angebote3.learn_more', null, 'Pelajari lebih lanjut') !!}</div>
         </a>
         <a href="{{ route("angebote2.restaurant") }}" class="angebot-block w-inline-block">
           <div class="div-angebot-picture-6"><img src="{{ asset("images/logoicon_restaurant_green.svg") }}" loading="lazy" alt="" class="logoicon_06"></div>
-          <h3 class="heading-8">{!! trans_db('angebote3.restaurant.title', null, 'Restaurant') !!}</h3>
-          <p class="paragraph-6">{!! trans_db('angebote3.restaurant.desc', null, "Le mouvement donne faim et soif. C'est pourquoi il y a aussi un restaurant et un bar dans le centre de loisirs Mundial où vous pouvez bien manger et boire des boissons raffinées. Cela vous donnera une nouvelle énergie. Nous nous réjouissons de votre visite. Bon appétit et santé !") !!}</p>
-          <div class="text-block-5">{!! trans_db('angebote3.learn_more', null, 'En savoir plus') !!}</div>
+          <h3 class="heading-8">{!! trans_db('angebote3.restaurant.title', null, 'Restoran') !!}</h3>
+          <p class="paragraph-6">{!! trans_db('angebote3.restaurant.desc', null, "Bergerak membuat lapar dan haus. Itulah mengapa ada restoran dan bar di pusat hiburan Mundial tempat Anda bisa makan dengan baik dan menikmati minuman berkualitas. Ini akan memberi Anda energi baru. Kami senang menyambut kunjungan Anda. Selamat makan!") !!}</p>
+          <div class="text-block-5">{!! trans_db('angebote3.learn_more', null, 'Pelajari lebih lanjut') !!}</div>
         </a>
       </div>
     </div>
@@ -86,7 +86,7 @@
             <a href="{{ route("kontakt") }}" class="nav-link-2 w-nav-link">{{ trans_db('nav.contact') }}</a>
             <x-language-selector />
           </nav>
-          <a href="{{ route("aufgabe") }}" class="button-task-header w-button">{!! trans_db('angebote2.common.task_button', null, 'Tâche') !!}</a>
+          <a href="{{ route("aufgabe") }}" class="button-task-header w-button">{!! trans_db('angebote2.common.task_button', null, 'Tugas') !!}</a>
           <div class="menu-button w-nav-button">
             <div class="icon w-icon-nav-menu"></div>
           </div>

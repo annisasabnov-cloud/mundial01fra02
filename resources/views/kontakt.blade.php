@@ -48,42 +48,42 @@
       <div class="w-form">
         <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" redirect="https://mundial-de.webflow.io/no-way" data-redirect="https://mundial-de.webflow.io/no-way" class="form-2">
           <div>
-            <div id="formInstructions" class="small-text"><em>* Champs obligatoires<br>‍</em></div>
+            <div id="formInstructions" class="small-text"><em>{{ trans_db('kontakt.form.required_note', null, '* Required fields') }}<br>‍</em></div>
           </div>
-          <div><label for="First-Name-2" id="contact-first-name">La raison pour le contact *</label><select id="field" name="field" required="" class="w-select">
-              <option value="">Veuillez choisir...</option>
-              <option value="First">Questions générales</option>
-              <option value="Second">Questions sur les abonnements</option>
-              <option value="First">Réservations</option>
-              <option value="Third">Eloges et plaintes</option>
-              <option value="Another Choice">Autres</option>
+          <div><label for="First-Name-2" id="contact-first-name">{{ trans_db('kontakt.form.reason_label', null, 'Contact reason *') }}</label><select id="field" name="field" required="" class="w-select">
+              <option value="">{{ trans_db('kontakt.form.reason_select', null, 'Please select...') }}</option>
+              <option value="First">{{ trans_db('kontakt.form.reason_general', null, 'General inquiry') }}</option>
+              <option value="Second">{{ trans_db('kontakt.form.reason_subscription', null, 'Subscription inquiry') }}</option>
+              <option value="First">{{ trans_db('kontakt.form.reason_reservation', null, 'Reservation') }}</option>
+              <option value="Third">{{ trans_db('kontakt.form.reason_praise', null, 'Praise and complaints') }}</option>
+              <option value="Another Choice">{{ trans_db('kontakt.form.reason_other', null, 'Other') }}</option>
             </select></div>
           <div class="contact-form-grid-2">
-            <div id="w-node-aa40560f-18b4-f673-4114-75a8ac1d95dd-f11246f9"><label for="First-Name" id="contact-first-name">Prénom *</label><input type="text" class="w-input" maxlength="256" name="First-Name" data-name="First Name" id="First-Name" required=""></div>
-            <div id="w-node-aa40560f-18b4-f673-4114-75a8ac1d95e1-f11246f9"><label for="Last-Name" id="contact-last-name">Nom de famille*</label><input type="text" class="w-input" maxlength="256" name="Last-Name" data-name="Last Name" id="Last-Name" required=""></div>
-            <div id="w-node-aa40560f-18b4-f673-4114-75a8ac1d95e5-f11246f9"><label for="Email" id="contact-email">E-mail *</label><input type="email" class="w-input" maxlength="256" name="Email" data-name="Email" id="Email" required=""></div>
-            <div id="w-node-aa40560f-18b4-f673-4114-75a8ac1d95e9-f11246f9"><label for="Contact-Phone-Number" id="contact-phone">Numéro de téléphone</label><input type="number" class="w-input" maxlength="256" name="Contact-Phone-Number" data-name="Contact Phone Number" id="Contact-Phone-Number"></div>
-            <div id="w-node-aa40560f-18b4-f673-4114-75a8ac1d95ed-f11246f9"><label for="Message" id="contact-message">Message *</label><textarea data-name="Message" maxlength="5000" id="Message" name="Message" required="" class="w-input"></textarea></div>
+            <div id="w-node-aa40560f-18b4-f673-4114-75a8ac1d95dd-f11246f9"><label for="First-Name" id="contact-first-name">{{ trans_db('kontakt.form.first_name', null, 'First Name *') }}</label><input type="text" class="w-input" maxlength="256" name="First-Name" data-name="First Name" id="First-Name" required=""></div>
+            <div id="w-node-aa40560f-18b4-f673-4114-75a8ac1d95e1-f11246f9"><label for="Last-Name" id="contact-last-name">{{ trans_db('kontakt.form.last_name', null, 'Last Name *') }}</label><input type="text" class="w-input" maxlength="256" name="Last-Name" data-name="Last Name" id="Last-Name" required=""></div>
+            <div id="w-node-aa40560f-18b4-f673-4114-75a8ac1d95e5-f11246f9"><label for="Email" id="contact-email">{{ trans_db('kontakt.form.email', null, 'E-mail *') }}</label><input type="email" class="w-input" maxlength="256" name="Email" data-name="Email" id="Email" required=""></div>
+            <div id="w-node-aa40560f-18b4-f673-4114-75a8ac1d95e9-f11246f9"><label for="Contact-Phone-Number" id="contact-phone">{{ trans_db('kontakt.form.phone', null, 'Phone Number') }}</label><input type="number" class="w-input" maxlength="256" name="Contact-Phone-Number" data-name="Contact Phone Number" id="Contact-Phone-Number"></div>
+            <div id="w-node-aa40560f-18b4-f673-4114-75a8ac1d95ed-f11246f9"><label for="Message" id="contact-message">{{ trans_db('kontakt.form.message', null, 'Message *') }}</label><textarea data-name="Message" maxlength="5000" id="Message" name="Message" required="" class="w-input"></textarea></div>
           </div>
         </form>
         <div class="w-form-done">
-          <div>Thank you! Your submission has been received!</div>
+          <div>{{ trans_db('kontakt.form.success', null, 'Thank you! Your submission has been received!') }}</div>
         </div>
         <div class="w-form-fail">
-          <div>Oops! Something went wrong while submitting the form.</div>
+          <div>{{ trans_db('kontakt.form.error', null, 'Oops! Something went wrong while submitting the form.') }}</div>
         </div>
       </div>
-      <a href="{{ route("noWay") }}" class="primary-button w-button">Soumettre le formulaire</a>
+      <a href="{{ route('noWay') }}" class="primary-button w-button">{{ trans_db('kontakt.form.submit', null, 'Submit Form') }}</a>
     </div>
     <div class="container-21 w-container">
       <div class="w-row">
         <div class="column-3 w-col w-col-6">
-          <h4>Horaires d&#x27;ouvertures</h4>
-          <p>Lundi - Jeudi : 08h00 - 19h00<br>Vendredi : 08h00 - 21h00<br>Samedi : 09h00 - 17h00<br>Dimanche : 09h00 - 12h00</p>
+          <h4>{{ trans_db('kontakt.hours.heading', null, 'Opening Hours') }}</h4>
+          <p>{!! trans_db('kontakt.hours.times', null, 'Mon - Thu: 08:00 - 19:00<br>Fri: 08:00 - 21:00<br>Sat: 09:00 - 17:00<br>Sun: 09:00 - 12:00') !!}</p>
         </div>
         <div class="column-4 w-col w-col-6">
-          <h4>Contact</h4>
-          <p>Centre de loisirs Mundial<br>Frohstrasse 32<br>21362 Bringels<br>Télephone: 0041 870 23 57 48</p>
+          <h4>{{ trans_db('kontakt.contact.heading', null, 'Contact') }}</h4>
+          <p>{!! trans_db('kontakt.contact.address', null, 'Mundial Leisure Center<br>Frohstrasse 32<br>21362 Bringels<br>Phone: 0041 870 23 57 48') !!}</p>
         </div>
       </div>
     </div>
@@ -96,7 +96,7 @@
           <a href="{{ route("kontakt") }}" aria-current="page" class="nav-link-2 w-nav-link w--current">{{ trans_db('nav.contact') }}</a>
           <x-language-selector />
         </nav>
-        <a href="{{ route("aufgabe") }}" class="button-task-header w-button">Tâche</a>
+        <a href="{{ route('aufgabe') }}" class="button-task-header w-button">{{ trans_db('angebote2.common.task_button', null, 'Task') }}</a>
         <div class="menu-button w-nav-button">
           <div class="icon w-icon-nav-menu"></div>
         </div>

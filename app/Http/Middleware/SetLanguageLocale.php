@@ -19,7 +19,7 @@ class SetLanguageLocale
         $language = $request->query('lang') ?? session('language') ?? config('app.locale', 'fr');
         
         // Validate language is supported
-        $supportedLanguages = ['en', 'fr', 'de', 'es', 'it'];
+        $supportedLanguages = ['en', 'fr', 'de', 'es', 'it', 'id'];
         if (!in_array($language, $supportedLanguages)) {
             $language = 'fr';
         }
