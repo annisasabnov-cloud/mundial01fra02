@@ -45,8 +45,7 @@ class TranslationResource extends Resource
                             ->required()
                             ->maxLength(255)
                             ->helperText('e.g., preise.pool_table, nav.offers, footer.copyright')
-                            ->placeholder('e.g., page.home.heading')
-                            ->copyable(),
+                            ->placeholder('e.g., page.home.heading'),
                         Forms\Components\Select::make('language')
                             ->label('Language')
                             ->options(self::getLanguageOptions())

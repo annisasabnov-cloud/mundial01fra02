@@ -28,9 +28,9 @@
   </script>
 
   <style>
-  .preise-table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; }
-  .preise-table td, .preise-table th { border: 1px solid #dddddd; text-align: left; padding: 8px; }
-  .preise-table tr:nth-child(even) { background-color: #F9F9F9; }
+  .preise-table, table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; margin-bottom: 20px;}
+  .preise-table td, table td, .preise-table th, table th { border: 1px solid #dddddd; text-align: left; padding: 8px; }
+  .preise-table tr:nth-child(even), table tr:nth-child(even) { background-color: #F9F9F9; }
   </style>
 
 </head>
@@ -53,27 +53,27 @@
 
       {{-- Table 1: Swimming Pool --}}
       <div class="html-embed w-embed">
-        {!! trans_db('preise.pool_table', null, '') !!}
+        {!! \Illuminate\Support\Str::markdown(trans_db('preise.pool_table', null, ''), ['html_input' => 'allow']) !!}
       </div>
 
       {{-- Table 2: Sauna --}}
       <div class="w-embed">
-        {!! trans_db('preise.sauna_table', null, '') !!}
+        {!! \Illuminate\Support\Str::markdown(trans_db('preise.sauna_table', null, ''), ['html_input' => 'allow']) !!}
       </div>
 
       {{-- Table 3: Bowling --}}
       <div class="w-embed">
-        {!! trans_db('preise.bowling_table', null, '') !!}
+        {!! \Illuminate\Support\Str::markdown(trans_db('preise.bowling_table', null, ''), ['html_input' => 'allow']) !!}
       </div>
 
       {{-- Table 4: Mini Golf --}}
       <div class="w-embed">
-        {!! trans_db('preise.minigolf_table', null, '') !!}
+        {!! \Illuminate\Support\Str::markdown(trans_db('preise.minigolf_table', null, ''), ['html_input' => 'allow']) !!}
       </div>
 
       {{-- Table 5: All Facilities --}}
       <div class="w-embed">
-        {!! trans_db('preise.all_table', null, '') !!}
+        {!! \Illuminate\Support\Str::markdown(trans_db('preise.all_table', null, ''), ['html_input' => 'allow']) !!}
       </div>
 
       <div data-duration-in="300" data-duration-out="100" class="w-tabs">
