@@ -2,6 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
+use Illuminate\Support\Facades\Artisan;
+
+Route::get('/clear', function() {
+    Artisan::call('optimize:clear');
+    return 'Cache berhasil dibersihkan dari web!';
+});
+
+
 // Language switching route
 Route::get('/lang/{language}', [\App\Http\Controllers\LanguageController::class, 'switch'])->name('language.switch');
 
